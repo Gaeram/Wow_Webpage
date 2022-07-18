@@ -1,0 +1,184 @@
+@font-face {
+    font-family:"Poppins Regular" ;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+
+
+/* CENTRAGE DE LA PAGE  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins Regular", sans-serif;
+}
+
+main{
+    margin: auto;
+    padding: auto;
+}
+
+/* CUSTOMISATION LETTRAGE */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin-left: 2vh;
+    margin-top: 20px;
+    font-family: "Poppins Bold", sans-serif;
+}
+
+p{
+    
+    margin-top: 20px;
+    font-size: 0.7em;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin : 2vh;
+}
+
+/* CUSTOMISATION DU HEADER */
+
+header{
+    background-color:#90886D ;
+    height: 7vh;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin-top: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    margin-right:5vh;
+}
+
+li{
+    margin-top: 2vh;
+    margin-left: 15px;
+}
+
+.persos > a {
+    font-size: 0.8em;    
+}
+
+
+
+/* Customisation du corps */
+
+img{
+    height: 175px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.persos{
+    margin-top: 9vh;
+    margin-left: 10vh;
+    margin-right:10vh ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.hunter{
+    height: 600px;
+    width: 400px;
+    border: solid black 1px;
+    box-shadow: 5px 3px 3px grey;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.wizard{
+    height: 600px;
+    width: 400px;
+    border: solid black 1px;
+    box-shadow: 5px 3px 3px grey;
+    display: flex;
+    flex-direction: column;   
+}
+
+.paladin{
+    height: 600px;
+    width: 400px;
+    border: solid black 1px;
+    box-shadow: 5px 3px 3px grey;
+    display: flex;
+    flex-direction: column;   
+}
+
+/* Customisation des boutons */
+.but1{
+    margin-top: 23vh;
+    display:inline-block;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+}
+
+.but2{
+    margin-top: 25vh;
+    display:inline-block;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid mediumspringgreen ;
+    border-radius: 5px;
+    background-color: mediumspringgreen ;
+}
+
+.but3{
+    margin-top: 19vh;
+    display:inline-block;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid hotpink;
+    border-radius: 5px;
+    background-color: hotpink;
+
+}
+
+@media screen and (max-width: 768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .persos{
+        margin-left: 10vh;
+        margin-right: 10vh;
+        flex-flow: column;
+    }
+
+    .wizard{
+        margin-top: 5vh;
+    }
+
+    .paladin{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
